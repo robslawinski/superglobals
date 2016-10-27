@@ -19,4 +19,11 @@ function test_Server()
 }
 
 test_Server();
+
+function test_Get()
+{
+	echo '<p>'. $_GET['title'] . '</p>';
+}
+
+test_Get();
 ?>
