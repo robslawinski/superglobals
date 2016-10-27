@@ -3,7 +3,7 @@ function testGlobals()
 {
 	$foo = "local variable";
 	
-	echo 'foo in current scope: '. $GLOBALS . ["foo"] ."\n";
+	echo '<p>'. 'foo in current scope: '. $GLOBALS . ["foo"] .'</p>';
 	echo 'foo in global scope' . $foo . "\n";
 	
 	
@@ -12,4 +12,8 @@ function testGlobals()
 $foo = "An example";
 testGlobals();
 
+function test_Server()
+{
+	echo $_SERVER[''];
+}
 ?>
