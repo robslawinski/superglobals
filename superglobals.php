@@ -4,7 +4,7 @@ function testGlobals()
 	$foo = "local variable";
 	
 	echo '<p>'. 'foo in current scope: '. $GLOBALS . ["foo"] .'</p>';
-	echo 'foo in global scope' . $foo . "\n";
+	echo '<p>'.'foo in global scope' . $foo . '</p>';
 	
 	
 }
@@ -14,6 +14,9 @@ testGlobals();
 
 function test_Server()
 {
-	echo $_SERVER[''];
+	$path = print_r('<p>'. $_SERVER['PHP_SELF'].'</p>');
+	
 }
+
+test_Server();
 ?>
